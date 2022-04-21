@@ -1,0 +1,43 @@
+@import "vars";
+
+.about {
+  &__inner {
+    padding-top: 260px;
+    display: flex;
+    gap: 190px;
+  }
+  &__info {
+    &-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $accent;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #2a3246;
+    &-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $accent;
+    }
+    &-img {
+      height: 500px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

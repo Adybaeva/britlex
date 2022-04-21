@@ -1,0 +1,35 @@
+@import "vars";
+
+.hero {
+  &__inner {
+    display: flex;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    color: $black;
+  }
+  &__p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: $accent;
+  }
+  &__btn {
+    margin-top: 66px;
+    width: 438px;
+    height: 118px;
+    background: $dark;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 118px;
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: $purewhite;
+  }
+}

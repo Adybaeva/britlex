@@ -1,0 +1,162 @@
+@import "vars";
+//  media for 992px
+
+@media screen and (max-width: 992px) {
+  .body {
+    margin: 0;
+  }
+  .container {
+    max-width: 959px;
+  }
+  .header {
+    padding: 25px 0 0px;
+    &__img {
+      max-width: 90px;
+    }
+    &__btn {
+      text-align: center;
+      font-size: 18px;
+      line-height: 46px;
+      width: 160px;
+      height: 46px;
+    }
+  }
+  .menu {
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &__list + &__list {
+      margin-left: 25px;
+    }
+    &__list:first-child {
+      margin-left: 35px;
+    }
+  }
+  .hero {
+    &__title {
+      font-size: 48px;
+      line-height: 64px;
+    }
+    &__p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__img {
+      padding-top: 35px;
+      width: 460px;
+      height: 480px;
+      img {
+        height: 100%;
+      }
+    }
+    &__btn {
+      margin: 0;
+      width: 292px;
+      height: 80px;
+      line-height: 80px;
+    }
+    &__link {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+  .section-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 80px;
+  }
+  .title {
+    margin-top: 50px;
+  }
+  .speaking {
+    padding: 0;
+    height: 696px;
+    min-height: 0;
+    &__img {
+      margin: 0;
+      width: 260px;
+      height: 260px;
+    }
+  }
+  //   &__link {
+  //     margin-top: 52px;
+  //   }
+  // }
+
+  // .writing {
+  //   &__img {
+  //     width: 205px;
+  //     height: 205px;
+  //     img {
+  //       margin-left: 84px;
+  //     }
+  //   }
+  // }
+  .skills {
+    &__inner {
+      grid-template-columns: 303px 303px 303px;
+      // grid-template-rows: 442px 241px;
+    }
+    // &__title {
+    //   padding: 10px 26px;
+    //   font-size: 22px;
+    //   line-height: 80px;
+    // }
+    // &__p {
+    //   padding: 0 25px;
+    //   font-size: 14px;
+    //   line-height: 21px;
+    // }
+    // &__link {
+    //   width: 196px;
+    //   height: 57px;
+    // }
+  }
+}
+
+// media for 767
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+  .header {
+    &__btn {
+      display: none;
+    }
+    &__toggle {
+      display: block;
+      border: none;
+      background-color: $purewhite;
+      color: $black;
+    }
+  }
+  .menu {
+    display: none;
+  }
+}
+
+// media for 575
+@media screen and (max-width: 575px) {
+  .header {
+    padding: 35px 0 35px;
+    &__toggle {
+      width: 50px;
+    }
+  }
+  .container {
+    max-width: 540px;
+  }
+}
+
+// media for 320
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding: 30px 0 30px;
+  }
+  .container {
+    max-width: 320px;
+  }
+}

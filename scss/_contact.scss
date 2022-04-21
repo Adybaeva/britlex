@@ -1,0 +1,43 @@
+@import "vars";
+
+.contact {
+  position: relative;
+  &__inner {
+    padding-top: 222px;
+    display: flex;
+    gap: 100px;
+  }
+  &__info {
+    &-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $accent;
+    }
+  }
+  &__form {
+    display: flex;
+    padding-top: 25px;
+  }
+  &__form-email {
+    width: 450px;
+    height: 80px;
+    border: 1px solid #8f95a5;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $accent;
+    padding-left: 20px;
+  }
+  &__form-btn {
+    width: 264px;
+    height: 80px;
+    background: $dark;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}
